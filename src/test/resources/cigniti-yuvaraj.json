@@ -1,0 +1,66 @@
+{
+    "provider": {
+        "name": "yuvaraj"
+    },
+    "consumer": {
+        "name": "cigniti"
+    },
+    "interactions": [
+        {
+            "description": "create a user",
+            "request": {
+                "method": "POST",
+                "path": "/pact/user",
+                "body": {
+                    "name": "Yuvaraj",
+                    "empId": "n465290",
+                    "department": "IT"
+                }
+            },
+            "response": {
+                "status": 201,
+                "body": {
+                    "name": "Yuvaraj",
+                    "empId": "n465290",
+                    "department": "IT"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "I have a service that can create a user"
+                }
+            ]
+        },
+        {
+            "description": "a get request to get the user information",
+            "request": {
+                "method": "GET",
+                "path": "/pact/user"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "name": "Yuvaraj",
+                    "empId": "n465290",
+                    "department": "IT"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "I have a user named Yuvaraj"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.11"
+        }
+    }
+}
