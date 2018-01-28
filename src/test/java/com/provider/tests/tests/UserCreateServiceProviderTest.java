@@ -20,14 +20,14 @@ import java.net.URI;
  * Created by Yuvaraj on 27/01/2018.
  */
 @RunWith(PactRunner.class)
-@Provider("spring poc")
-@PactFolder("target/pacts")
+@Provider("yuvaraj")
+@PactFolder("target/pacts/")
 public class UserCreateServiceProviderTest {
 
     @TestTarget
     public final Target target = new HttpTarget(8080);
 
-    @State(value = "I have a user")
+    @State(value = "I have a user named Yuvaraj")
     public void verifyState() {
 
     }
