@@ -33,7 +33,7 @@ public class ServiceConsumerTest extends ConsumerPactTestMk2 {
         user.setDepartment("IT");
 
         Map<String, String> headers = new HashMap<>();
-        headers.put("Content-Type", "application/json;charset=UTF-8");
+        headers.put("Content-Type", "application/json;charset=utf-8");
         return pactDslWithProvider
                 .given("I have a user named Yuvaraj")
                 .uponReceiving("a get request to get the user information")

@@ -19,7 +19,7 @@ public class UserProviderController {
         User user = new User();
         user.setName("Yuvaraj");
         user.setDepartment("IT");
-        user.setEmpId("n465290");
+        user.setId("n465290");
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 

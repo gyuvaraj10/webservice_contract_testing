@@ -1,0 +1,34 @@
+{
+    "provider": {
+        "name": "xmlProvider"
+    },
+    "consumer": {
+        "name": "xmlConsumer"
+    },
+    "interactions": [
+        {
+            "description": "a request to receive the list of books",
+            "request": {
+                "method": "GET",
+                "path": "/get/books"
+            },
+            "response": {
+                "status": 200,
+                "body": "<?xml version=\"1.0\"?>\n<catalog>\n    <book id=\"bk101\">\n        <author>Gambardella, Matthew</author>\n        <title>XML Developer's Guide</title>\n        <genre>Computer</genre>\n        <price>44.95</price>\n        <publish_date>2000-10-01</publish_date>\n        <description>An in-depth look at creating applications\n            with XML.</description>\n    </book>\n</catalog>"
+            },
+            "providerStates": [
+                {
+                    "name": "I have a book"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.11"
+        }
+    }
+}
