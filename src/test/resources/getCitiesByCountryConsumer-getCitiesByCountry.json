@@ -1,0 +1,39 @@
+{
+    "provider": {
+        "name": "getCitiesByCountry"
+    },
+    "consumer": {
+        "name": "getCitiesByCountryConsumer"
+    },
+    "interactions": [
+        {
+            "description": "a request to get the list of cities by country",
+            "request": {
+                "method": "POST",
+                "path": "/globalweather.asmx",
+                "headers": {
+                    "SOAPAction": "http://www.webserviceX.NET/GetCitiesByCountry",
+                    "Content-Type": "text/xml"
+                },
+                "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <GetCitiesByCountry xmlns=\"http://www.webserviceX.NET\">\n            <CountryName>UK</CountryName>\n        </GetCitiesByCountry>\n    </soap:Body>\n</soap:Envelope>"
+            },
+            "response": {
+                "status": 200,
+                "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><GetCitiesByCountryResponse xmlns=\"http://www.webserviceX.NET\"><GetCitiesByCountryResult>&lt;NewDataSet&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;Boryspil&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;Simferopol&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;Kharkiv&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;Kyiv&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;L'Viv&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;Table&gt;\n    &lt;Country&gt;Ukraine&lt;/Country&gt;\n    &lt;City&gt;Odesa&lt;/City&gt;\n    &lt;/Table&gt;\n    &lt;/NewDataSet&gt;</GetCitiesByCountryResult></GetCitiesByCountryResponse></soap:Body></soap:Envelope>"
+            },
+            "providerStates": [
+                {
+                    "name": "cities by country are available"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.11"
+        }
+    }
+}

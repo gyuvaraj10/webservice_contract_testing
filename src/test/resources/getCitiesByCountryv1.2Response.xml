@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetCitiesByCountryResponse xmlns="http://www.webserviceX.NET"><GetCitiesByCountryResult>&lt;NewDataSet&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;Boryspil&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;Simferopol&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;Kharkiv&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;Kyiv&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;L'Viv&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;Table&gt;
+    &lt;Country&gt;Ukraine&lt;/Country&gt;
+    &lt;City&gt;Odesa&lt;/City&gt;
+    &lt;/Table&gt;
+    &lt;/NewDataSet&gt;</GetCitiesByCountryResult></GetCitiesByCountryResponse></soap:Body></soap:Envelope>
