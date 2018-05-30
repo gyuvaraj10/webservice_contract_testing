@@ -20,7 +20,7 @@ import java.net.URI;
  * Created by Yuvaraj on 27/01/2018.
  */
 @RunWith(PactRunner.class)
-@Provider("yuvaraj")
+@Provider("yuvaraj_create")
 @PactFolder("target/pacts/")
 public class UserCreateServiceProviderTest {
 
