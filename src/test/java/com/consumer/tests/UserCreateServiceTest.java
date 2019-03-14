@@ -25,7 +25,7 @@ public class UserCreateServiceTest extends ConsumerPactTestMk2 {
     protected RequestResponsePact createPact(PactDslWithProvider pactDslWithProvider) {
         User user = new User();
         user.setEmpId("n465290");
-        user.setName("Yuvaraj");
+        user.setName("YuvarajTest123");
         user.setDepartment("IT");
 
         return pactDslWithProvider.given("I have a service that can create a user")
@@ -52,7 +52,7 @@ public class UserCreateServiceTest extends ConsumerPactTestMk2 {
     protected void runTest(MockServer mockServer) throws IOException {
         User user = new User();
         user.setEmpId("n465290");
-        user.setName("Yuvaraj");
+        user.setName("YuvarajTest");
         user.setDepartment("IT");
         String url = mockServer.getUrl();
         String userJson = new Gson().toJson(user);
