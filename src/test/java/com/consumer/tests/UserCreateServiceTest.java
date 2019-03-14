@@ -52,7 +52,7 @@ public class UserCreateServiceTest extends ConsumerPactTestMk2 {
     protected void runTest(MockServer mockServer) throws IOException {
         User user = new User();
         user.setEmpId("n465290");
-        user.setName("YuvarajTest");
+        user.setName("YuvarajTest123");
         user.setDepartment("IT");
         String url = mockServer.getUrl();
         String userJson = new Gson().toJson(user);
