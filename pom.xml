@@ -14,6 +14,11 @@
         <version>1.5.2.RELEASE</version>
     </parent>
 
+    <properties>
+        <pactbroker.host>ec2-35-178-11-4.eu-west-2.compute.amazonaws.com</pactbroker.host>
+        <pactbroker.port>80</pactbroker.port>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.hamcrest</groupId>

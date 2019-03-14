@@ -32,14 +32,14 @@ public class User {
 
     private String empId;
 
-    public String getId() {
-        return id;
+    public String getID1() {
+        return ID1;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.ID1 = id;
     }
 
-    private String id;
+    private String ID1;
     private String department;
 }
