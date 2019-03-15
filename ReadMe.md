@@ -14,3 +14,8 @@ http://localhost:8080/pact/user -- POST
 
 
 
+1. Run mvn spring-boot:run to run the server.
+    http://localhost:8080/swagger-ui.html#/ to launch the swagger ui
+    http://localhost:8080/v2/api-docs for the api documentation
+    
+ http://localhost:8080/accounts/fixed-savers for the fixed savers account   

@@ -30,9 +30,9 @@ public class ServiceConsumerV2Test {
         user.setName("subbu");
         user.setDepartment("IT");
         String userJson = new Gson().toJson(user);
-        return provider.given("user named subbu is available")
-                .uponReceiving("get me a user subbu")
-                    .path("/pact/user")
+        return provider.given("user named app2 is available")
+                .uponReceiving("get me a user app2")
+                    .path("/pact/user1")
                     .method("GET")
                 .willRespondWith()
                     .status(200)
@@ -47,8 +47,8 @@ public class ServiceConsumerV2Test {
         user.setName("paramesh");
         user.setDepartment("IT");
         String userJson = new Gson().toJson(user);
-        return provider.given("user named subbu is available")
-                .uponReceiving("get me a user paramesh")
+        return provider.given("user named atom is available")
+                .uponReceiving("get me a user atom")
                 .path("/pact/user")
                 .method("GET")
                 .willRespondWith()
@@ -61,6 +61,7 @@ public class ServiceConsumerV2Test {
     @PactVerification("user_provider")
     public void runTestUserSubbuGet() throws IOException {
         Response response = Request.Get(ruleMk2.getUrl()+"/pact/user").execute();
+        Response response1 = Request.Get(ruleMk2.getUrl()+"/pact/user1").execute();
 //        assert  response.returnResponse().getStatusLine().getStatusCode() == 200;
     }
 

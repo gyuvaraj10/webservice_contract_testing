@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by Yuvaraj on 26/01/2018.
  */
 @RestController
-@RequestMapping(path = "/pact")
+@RequestMapping(path = "/atom")
 public class UserProviderController {
 
     @RequestMapping(method = RequestMethod.GET, path = "/user")
