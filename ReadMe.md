@@ -12,7 +12,7 @@ http://localhost:8080/pact/user -- POST
 
 2. Run the test "UserCreateServiceProviderTest" that uses the pact files provided in the pact folder.
 
-
+    
 
 1. Run mvn spring-boot:run to run the server.
     http://localhost:8080/swagger-ui.html#/ to launch the swagger ui
