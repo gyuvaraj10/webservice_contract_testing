@@ -18,4 +18,8 @@ http://localhost:8080/pact/user -- POST
     http://localhost:8080/swagger-ui.html#/ to launch the swagger ui
     http://localhost:8080/v2/api-docs for the api documentation
     
- http://localhost:8080/accounts/fixed-savers for the fixed savers account   
+ http://localhost:8080/accounts/fixed-savers for the fixed savers account
+ 
+ 
+ To run the contract tests at the provider without running the mock server
+ swagger-mock-validator api-docs /Users/yuvaraj.gunisetti/poc/webservice_contract_testing/src/test/resources/atom_mule-thought_machine.json   
