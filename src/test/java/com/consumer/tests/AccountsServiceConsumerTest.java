@@ -31,7 +31,7 @@ public class AccountsServiceConsumerTest {
                 .path("/accounts/fixed-savers")
                 .method("GET")
                 .willRespondWith()
-                .status(202)
+                .status(200)
                 .body(content)
                 .toPact();
     }
