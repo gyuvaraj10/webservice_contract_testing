@@ -11,14 +11,14 @@ import java.util.Map;
 public class OutClass {
 
     public static void main(String[] args) {
-        ProviderInfo providerInfo = new ProviderInfo("user_provider");
+        ProviderInfo providerInfo = new ProviderInfo("thought_machine");
         providerInfo.setHost("localhost");
         providerInfo.setPort(8080);
         providerInfo.setPath("/");
 
         ConsumerInfo consumerInfo = new ConsumerInfo();
-        consumerInfo.setName("user_consumer2");
-        consumerInfo.setPactSource("target/pacts/user_consumer2-user_provider.json");
+        consumerInfo.setName("atom_mule");
+        consumerInfo.setPactSource("target/pacts/atom_mule-thought_machine.json");
         Pact pact = PactReader.loadPact(consumerInfo.getPactSource());
         List<Interaction> interactions = pact.getInteractions();
         Interaction interaction1 = interactions.get(0);
