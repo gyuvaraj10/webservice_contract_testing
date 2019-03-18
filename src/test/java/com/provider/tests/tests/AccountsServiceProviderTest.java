@@ -16,9 +16,11 @@ import org.junit.runner.RunWith;
 @VerificationReports(value = "markdown")
 public class AccountsServiceProviderTest {
 
+    private String appHost = System.getProperty("application.host");
+    private int appPort = Integer.valueOf(System.getProperty("application.port"));
 
     @TestTarget
-    public final Target target = new HttpTarget(8080);
+    public final Target target = new HttpTarget(appHost, appPort);
 
     @State(value = "thought machine has fixed saver account details")
     public void verifyState() {
