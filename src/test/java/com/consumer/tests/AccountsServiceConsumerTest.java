@@ -28,7 +28,7 @@ public class AccountsServiceConsumerTest {
                 Charset.defaultCharset());
         return provider.given("thought machine has fixed saver account details")
                 .uponReceiving("fixed saver account details")
-                .path("/accounts/fixed-saver")
+                .path("/accounts/fixed-savers")
                 .method("GET")
                 .willRespondWith()
                 .status(200)
