@@ -2,84 +2,84 @@
   {
     "duration": "3 Month",
     "interestType": "Annual interest",
-    "gross": "0.45%",
+    "grossValue": "0.45%",
     "aer": "0.45%",
     "earnedAmount": "£54.86*"
   },
   {
     "duration": "3 Month",
     "interestType": "Monthly interest",
-    "gross": "0.45%",
+    "grossValue": "0.45%",
     "aer": "0.45%",
     "earnedAmount": "£54.89*"
   },
   {
     "duration": "6 Month",
     "interestType": "Annual interest",
-    "gross": "1.25%",
+    "grossValue": "1.25%",
     "aer": "1.25%",
     "earnedAmount": "£309.93*"
   },
   {
     "duration": "6 Month",
     "interestType": "Monthly interest",
-    "gross": "1.24%",
+    "grossValue": "1.24%",
     "aer": "1.25%",
     "earnedAmount": "£308.25*"
   },
   {
     "duration": "1 Year",
     "interestType": "Annual interest",
-    "gross": "1.89%",
+    "grossValue": "1.89%",
     "aer": "1.89%",
     "earnedAmount": "£945.00*"
   },
   {
     "duration": "1 Year",
     "interestType": "Monthly interest",
-    "gross": "1.87%",
+    "grossValue": "1.87%",
     "aer": "1.89%",
     "earnedAmount": "£943.04*"
   },
   {
     "duration": "2 Year",
     "interestType": "Annual interest",
-    "gross": "2.00%",
+    "grossValue": "2.00%",
     "aer": "2.00%",
     "earnedAmount": "£2022.79*"
   },
   {
     "duration": "2 Year",
     "interestType": "Monthly interest",
-    "gross": "1.98%",
+    "grossValue": "1.98%",
     "aer": "2.00%",
     "earnedAmount": "£2020.85*"
   },
   {
     "duration": "3 Year",
     "interestType": "Annual interest",
-    "gross": "2.25%",
+    "grossValue": "2.25%",
     "aer": "2.25%",
     "earnedAmount": "£3454.73*"
   },
   {
     "duration": "3 Year",
     "interestType": "Monthly interest",
-    "gross": "2.23%",
+    "grossValue": "2.23%",
     "aer": "2.25%",
     "earnedAmount": "£3459.35*"
   },
   {
     "duration": "5 Year",
     "interestType": "Annual interest",
-    "gross": "2.30%",
+    "grossValue": "2.30%",
     "aer": "2.30%",
     "earnedAmount": "£6024.09*"
   },
   {
     "duration": "5 Year",
     "interestType": "Monthly interest",
-    "gross": "2.28%",
+    "grossValue": "2.28%",
     "aer": "2.30%",
     "earnedAmount": "£6035.03*"
   }
