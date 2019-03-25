@@ -8,7 +8,7 @@ public class FixedSaver {
 
     private String duration;
     private String interestType;
-    private String gross;
+    private String grossValue;
     private String aer;
     private String earnedAmount;
 
